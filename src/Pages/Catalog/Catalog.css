@@ -1,0 +1,255 @@
+.title-row p {
+    text-align: right;
+    width: 60%;
+    color: #9C9C9C;
+}
+
+.filter-row {
+    display: flex;
+    padding: 20px 60px 20px 20px;
+    border-radius: 100px;
+    background-color: #F6F6F6;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.fltr {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    width: 100%;
+}
+
+.fltrs {
+    position: relative;
+}
+
+.modal-cont .title-row {
+    padding: 30px;
+}
+
+.btns-row {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 30px;
+    background-color: white;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.btns-row .apply, .btns-row .clear {
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: #818181;
+    background-color: #E4E4E4;
+    cursor: pointer;
+}
+
+.btns-row .apply {
+    color: white;
+    background-color: #72C0F4;
+}
+
+.filter-content .filters {
+    padding-right: 20px;
+}
+
+.filter-content {
+    height: 70%;
+    overflow: scroll;
+    margin: 0 5px 0 30px;
+}
+
+.filter-content::-webkit-scrollbar {
+    width: 5px;
+}
+
+.filter-row form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    border-radius: 30px;
+    width: 100%;
+    padding-right: 20px;
+}
+
+.filter-row form button {
+    background-color: transparent;
+    border: none;
+}
+
+.filter-row form input {
+    width: 100%;
+}
+
+.filter-row form button:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.filter-row button {
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: 500;
+    color: #72C0F4;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.filter-row button:hover > img {
+    transform: scale(1.1);
+}
+
+.catalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin-top: 50px;
+    gap: 50px;
+}
+
+.catalog .card {
+    padding: 30px;
+    border-radius: 30px;
+    background-color: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 570px;
+}
+
+.catalog .card:hover {
+    transform: translateY(-1%);
+    box-shadow: 10px 10px 0px #72c0f42e;
+}
+
+.catalog .label {
+    color: #818181;
+    font-size: 14px;
+}
+
+.catalog h6 {
+    font-family: 'title';
+    font-size: 24px;
+}
+
+.catalog p {
+    font-weight: 500;
+}
+
+.catalog .row {
+    display: flex;
+    gap: 10px;
+    font-weight: 500;
+}
+
+.catalog .row span {
+    color: #72C0F4;
+}
+
+.catalog img {
+    width: 100%;
+    border-radius: 30px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+    justify-content: end;
+}
+
+.pagination .points {
+    display: flex;
+    gap: 5px;
+}
+
+.pagination .points p {
+    font-weight: 600;
+    font-size: 30px;
+    color: #72C0F4;
+    background-color: transparent;
+    padding: 0;
+}
+
+.pagination .nextpage {
+    rotate: -90deg;
+    cursor: pointer;
+}
+
+.pagination .prevpage {
+    rotate: 90deg;
+    cursor: pointer;
+}
+
+.pagination .nextpage:hover, .pagination .prevpage:hover, .pagination p:hover {
+    transform: scale(1.2);
+}
+
+.pagination p {
+    font-weight: 500;
+    color: white;
+    background-color: #E4E4E4;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.pagination .active {
+    color: white;
+    background-color: #72C0F4;
+}
+
+.modal-cont .title-row .title {
+    font-size: 24px;
+    width: 100%;
+    border-bottom: 1px solid #E4E4E4;
+    padding-bottom: 15px;
+}
+
+.title-row .title::before {
+    top: 20%;
+}
+
+.fltr .modal-cont {
+    margin-left: 42%;
+    height: 80%;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 15px;
+    border: 2px solid #72C0F4;
+    color: #9C9C9C;
+    font-size: 16px;
+}
+
+.catalog .result {
+    position: absolute;
+}
+
+.catalog .result span {
+    color: #72C0F4;
+    font-weight: 500;
+}
+

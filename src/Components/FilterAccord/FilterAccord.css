@@ -1,0 +1,33 @@
+.accordion-filter {
+    overflow: hidden;
+}
+
+.accordion-header {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+.accordion-header h3 {
+    font-weight: 500;
+}
+
+.accordion-cont {
+    max-height: 0; 
+    opacity: 0; 
+    overflow: hidden; 
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.accordion-header .rotate {
+    transform: rotate(180deg);
+}
+
+.accordion-cont.open {
+    max-height: 1000px;
+    opacity: 1;
+}

@@ -1,0 +1,489 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0;
+    align-items: center;
+}
+
+header .link {
+    background-color: #F6F6F6;
+    font-weight: 500;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+header .link:hover,
+header .sign:hover,
+header .btn:hover {
+    color: #72C0F4;
+}
+
+header img {
+    width: 100px;
+}
+
+header .btns {
+    display: flex;
+    gap: 20px;
+    background-color: #F6F6F6;
+    border-radius: 30px;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+header .btns .btn {
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-right: -10px;
+    font-weight: 500;
+}
+
+header nav {
+    display: flex;
+    gap: 15px;
+}
+
+header .sign {
+    font-weight: 500;
+    padding: 10px;
+}
+
+#searchform {
+    position: relative;
+    width: 0;
+    opacity: 0;
+    height: 0;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;
+    transition: width 0.3s ease, opacity 0.3s ease;
+    overflow: hidden;
+    display: flex;
+}
+
+#searchform input {
+    position: absolute;
+    width: 200px;
+    padding-right: 45px;
+}
+
+#searchform.open {
+    width: 200px;
+    opacity: 1;
+    height: 35px;
+    margin: 14px;
+}
+
+.text {
+    font-weight: 500;
+    padding: 20px;
+}
+
+#search:hover>.text {
+    color: #72C0F4;
+    cursor: pointer;
+}
+
+#search {
+    padding: 0;
+}
+
+#searchform button {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+#searchform button:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+#searchform button img {
+    width: 20px;
+}
+
+.header-mobile button {
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.header-mobile .modal-cont {
+    max-width: 100%;
+    border-radius: 0;
+    height: 100%;
+}
+
+.menu-content .active {
+    color: #72C0F4;
+    border: 2px solid #72C0F4;
+    border-radius: 30px;
+    padding: 5px 15px;
+}
+
+.menu-content .activesign {
+    border: 2px solid #000000;
+    border-radius: 30px;
+    padding: 5px 15px;
+}
+
+.modal-cont .contacts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 30px;
+    position: absolute;
+}
+
+.modal-cont a {
+    color: #9C9C9C;
+    position: relative;
+}
+
+.menu-content .badge {
+    margin-right: 10px;
+}
+
+.menu-content {
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.menu-content .sign {
+    margin-top: 20px;
+}
+
+.header-mobile #search {
+    z-index: 3;
+    display: flex;
+    align-items: center;
+}
+
+.header-mobile #search:hover>form {
+    width: 100%;
+    opacity: 1;
+}
+
+.header-mobile .btns {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-mobile form {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 30px;
+    width: 0%;
+    left: 0;
+    padding-right: 20px;
+    align-items: center;
+    position: absolute;
+    opacity: 0;
+    height: 50px;
+}
+
+.header-content {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 2px;
+}
+
+.header-mobile form img {
+    width: 20px;
+}
+
+.header-mobile form input {
+    width: 100%;
+}
+
+.headerlink {
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    padding: 7px 20px;
+    border-radius: 30px;
+}
+
+.headerlink .av {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.headerlink img:last-of-type {
+    width: 15px;
+    margin-left: 15px;
+}
+
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+    z-index: 100;
+}
+
+.tooltip {
+    position: absolute;
+    top: 0;
+    right: -40px;
+    transform: translateX(0%) translateY(-10px);
+    opacity: 0;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    pointer-events: none;
+}
+
+.tooltip .badge {
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+}
+
+.hello {
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.tooltip-content {
+    background-color: #F6F6F6;
+    border-radius: 30px;
+    margin-top: 70px;
+    padding: 30px 30px 80px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    box-shadow: 0 1.5px 5px 1px rgba(0, 0, 0, 0.089);
+}
+
+.tooltip-content::before {
+    content: '';
+    position: absolute;
+    background-image: url(/icons/tool.svg);
+    width: 34px;
+    height: 16px;
+    top: -16px;
+    right: 50px;
+    background-position: center;
+    background-size: cover;
+}
+
+.tooltip-content .menu-link,
+.tooltip-content .logout {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.tooltip-content img {
+    width: 15px;
+}
+
+.tooltip-content .logout {
+    font-weight: 500;
+    padding: 15px 30px 20px 30px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid #72C0F4;
+    color: #72C0F4;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.tooltip.visible {
+    opacity: 1;
+    transform: translateX(0%) translateY(0);
+    pointer-events: auto;
+}
+
+.tooltip-content .active {
+    background-color: white;
+    border-radius: 30px;
+    padding: 5px 20px;
+    margin-left: -20px;
+}
+
+.search-results {
+    position: relative;
+    padding: 20px;
+    border-radius: 30px;
+    border: 1px solid #E4E4E4;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.search-results .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.search-results .close img {
+    width: 15px;
+    height: 15px;
+}
+
+.search-results .close img:hover {
+    transform: scale(0.85);
+}
+
+.search-results p {
+    color: #72C0F4;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.search-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.section-title {
+    font-weight: 500;
+}
+
+.search-section li a {
+    font-size: 16px;
+    position: relative;
+    font-weight: 500;
+    color: #9C9C9C;
+    padding-left: 30px;
+}
+
+.search-section li a:hover {
+    color: #72C0F4;
+}
+
+.search-section li a::before {
+    position: absolute;
+    left: 0px;
+    top: 8px;
+    border-radius: 2px;
+    height: 5px;
+    width: 20px;
+    background-color: #72C0F4;
+    content: '';
+}
+
+.no-results {
+    font-weight: 500;
+    color: #9C9C9C;
+    font-size: 16px;
+}
+
+.notification {
+    position: relative;
+    height: 30px;
+    z-index: 100;
+}
+
+.notification img {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+.notification img:hover {
+    transform: scale(0.9);
+}
+
+.notification-popup {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+}
+
+.all-notification-popup {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    z-index: 999;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.all-notification-popup.hidden {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+}
+
+.scrollable {
+    height: 160.8px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 0px;
+}
+
+.scrollable::-webkit-scrollbar {
+    width: 5px;
+}
+
+.notification-item {
+    padding: 10px;
+    width: 200px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #757575;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.notification-item:hover {
+    background: #eef8ff;
+}
+
+.notification-item a {
+    color: #72C0F4;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.notification-item a:hover {
+    color: #abdafa;
+    width: fit-content;
+}
+
+.notification-item .date {
+    font-size: 12px;
+    font-weight: 500;
+    color: #b5b5b5;
+    margin-top: -5px;
+}
+
+form.search-mobile {
+    width: auto;
+    opacity: 1;
+    border: 1px solid #E4E4E4;
+    position: static;
+}

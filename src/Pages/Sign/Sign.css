@@ -1,0 +1,117 @@
+.left-block {
+    width: 50%;
+    height: auto;
+    background: url(/img/sign.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px 0 0 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left-block::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url(/corner/r2.svg);
+    bottom: 0;
+    right: -50px;
+}
+.left-block::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url(/corner/r3.svg);
+    top: 0;
+    right: 0px;
+}
+
+.left-block .subtitle {
+    color: white;
+    width: 100%;
+}
+
+.left-block p {
+    color: white;
+    font-weight: 500;
+}
+
+.sign-row {
+    display: flex;
+}
+
+.right-block {
+    border-radius: 0 30px 30px 0;
+    background-color: #F6F6F6;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-block .subtitle {
+    color: #72C0F4;
+    font-size: 36px;
+    width: 100%;
+}
+
+.content-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    gap: 30px;
+    padding: 60px 30px;
+}
+
+.content-form .subtitle {
+    margin: 0;
+}
+
+.sign-row form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 390px;
+}
+
+.left-block .mainbtn {
+    border: 2px solid white;
+    background-color: transparent;
+}
+
+.right-block .mainbtn {
+    margin-top: 10px;
+}
+
+.agree span {
+    background-color: transparent;
+    padding: 0;
+    color: #72C0F4;
+    font-size: 14px;
+}
+
+.agree label {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.agree {
+    width: 100%;
+}
+
+.agree .errortext {
+    padding-top: 10px;
+}
+
+.content-form .message {
+    max-width: 100%;
+    word-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+}

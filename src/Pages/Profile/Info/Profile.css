@@ -1,0 +1,142 @@
+.profile-content {
+    border-radius: 30px;
+    border: 1px solid #E4E4E4;
+    padding: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+
+.info-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.profile-content .info {
+    font-size: 14px;
+    font-weight: 500;
+    color: #9C9C9C;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+    white-space: nowrap;
+}
+
+.profile-content .info input {
+    padding: 0;
+}
+
+.email {
+    color: #9C9C9C;
+    font-weight: 500;
+}
+
+.profile-content input {
+    padding: 0;
+    border: none;
+    border-radius: 0;
+}
+
+.profile-content .input {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-name input {
+    width: 100%;
+}
+
+.avatar {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0; 
+    width: 200px;
+}
+
+.avatar .photo {
+    width: 200px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+.avatar input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    padding: 0;
+}
+
+.avatar label {
+    cursor: pointer;
+    display: flex;
+    color: #72C0F4;
+    align-items: center;
+    gap: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 30px;
+    border: 1px dashed #72C0F4;
+    padding: 10px;
+    justify-content: center;
+    width: 100%;
+}
+
+.avatar label img {
+    width: 15px;
+    margin-bottom: -1px;
+    border-radius: 0;
+}
+
+.avatar img {
+    width: 300px;
+    border-radius: 30px;
+}
+
+.profile-content .message {
+    margin-top: 20px;
+}
+
+.profile-content .avatar_btns {
+    display: flex;
+    align-items: center;
+}
+
+.profile-content .iconbtn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.profile-content .avatar_btns button img {
+    width: 20px;
+    border-radius: 0;
+}
+
+.profile-info {
+    width: 100%;
+}
+
+.editcontent {
+    border-radius: 30px;
+    border: 1px solid #E4E4E4;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.editcontent .info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #9C9C9C;
+}

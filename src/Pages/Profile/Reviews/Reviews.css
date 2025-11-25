@@ -1,0 +1,122 @@
+.revs {
+    border-radius: 30px;
+    padding: 30px;
+    border: 1px solid #E4E4E4;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.reviews-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.review-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 30px;
+    border: 1px solid #E4E4E4;
+}
+
+.report-view {
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #08bd0e;
+}
+
+.report-view p {
+    color: grey;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.user_content img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.user_content {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.username_content p {
+    font-weight: 500;
+    color: #72C0F4;
+}
+
+.review_title span {
+    color: #cecece;
+    font-size: 16px;
+}
+
+.review_title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating_content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.rating_content .psychologist {
+    display: flex;
+    gap: 10px;
+}
+
+.rating_content .psychologist a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #72C0F4;
+}
+
+.rating_content span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 400;
+}
+
+.review-item .user-btns {
+    margin: 0;
+    justify-content: flex-end;
+}
+
+.report-win .modal-cont {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.report-win h6 {
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.report-win .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.report-win textarea {
+    border: 1px solid #E4E4E4;
+}
+
+.user-btns .success {
+    font-weight: 500;
+    font-size: 16px;
+}

@@ -1,0 +1,20 @@
+.profile-row {
+    display: flex;
+    align-items: start;
+    gap: 30px;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.profile {
+    flex: 1;
+}
+
+.user-btns .check {
+    font-weight: 500;
+    font-size: 14px;
+    color: #7D7D7D;
+    align-items: center;
+    display: flex;
+    gap: 5px;
+}

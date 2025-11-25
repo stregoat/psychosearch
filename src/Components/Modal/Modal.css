@@ -1,0 +1,54 @@
+.modal-overlay {
+    position: fixed;   
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1000;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-cont {
+    position: relative;
+    z-index: 1001; 
+    background: #fff;
+    border-radius: 30px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.1);
+    transform: translateY(-20px);
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+}
+
+.modal-overlay.active .modal-cont {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.modal-button {
+    position: absolute;
+    z-index: 2;
+    top: 30px;
+    right: 30px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.modal-button:hover {
+    transform: scale(0.85);
+}

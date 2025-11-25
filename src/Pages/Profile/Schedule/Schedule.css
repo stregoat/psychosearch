@@ -1,0 +1,72 @@
+.schedule {
+    padding: 60px;
+    border-radius: 30px;
+    border: 1px solid #E4E4E4;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.schedule-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.date-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.date-item h6 {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.time-list {
+    display: flex;
+    gap: 20px;
+}
+
+.time-item {
+    font-weight: 500;
+    background-color: #E4F4FF;
+    padding: 10px 20px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.delete-slot {
+    cursor: pointer;
+    width: 15px;
+}
+
+.delete-slot:hover {
+    transform: scale(0.85);
+}
+
+.adddate .modal-cont {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.adddate .modal-cont h6 {
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.adddate .modal-cont .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.adddate .modal-cont .label input {
+    border: 1px solid #E4E4E4;
+    padding: 10px 20px;
+    border-radius: 30px;
+}

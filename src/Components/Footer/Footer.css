@@ -1,0 +1,117 @@
+footer {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: #F6F6F6;
+    margin-top: 100px;
+    padding: 50px 0;
+}
+
+footer span {
+    color: #009206;
+    background-color: #D5F7D7;
+    padding: 5px 10px;
+    border-radius: 30px;
+    font-weight: 500;
+}
+
+footer .subtitle {
+    margin-top: 20px;
+}
+
+.nets {
+    display: flex;
+    gap: 10px;
+}
+
+.contacts a {
+    font-weight: 500;
+}
+
+.label .row {
+    display: flex;
+    gap: 10px;
+}
+
+footer nav {
+    display: flex;
+    gap: 15px;
+}
+
+.contacts a img {
+    width: 30px;
+    height: 30px;
+}
+
+.contacts {
+    display: flex;
+    gap: 80px;
+    margin-top: 30px;
+}
+
+.contacts .column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+footer p {
+    font-weight: 500;
+    color: black;
+    margin-top: 20px;
+}
+
+.row {
+    display: flex;
+    gap: 50px;
+}
+
+.column {
+    width: 50%;
+}
+
+footer form {
+    display: flex;
+    margin-top: 29px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.footer {
+    margin-top: 50px;
+    border-top: 2px solid #7D7D7D;
+    border-radius: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    position: relative;
+}
+
+footer .link {
+    font-size: 16px;
+    color: #7D7D7D;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 2px solid #7D7D7D;
+}
+
+.footer p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #7D7D7D;
+}
+
+.footer .link:hover {
+    color: #F6F6F6;
+    background-color: #7D7D7D;
+}
+
+.label a:hover {
+    transform: scale(1.05);
+}
+
+footer .subtitle {
+    width: 100%;
+}
